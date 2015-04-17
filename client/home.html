@@ -1,6 +1,13 @@
 <template name="home">
   <h1>Home page</h1>
+  <div class="row">
   {{#each featuredProducts}}
-  <div class="col-md-3">{{name}}</div>
+  <div class="col-md-3">
+  	<h3>{{name}}</h3>
+  	<img>
+  	<p>{{price}}</p>
+  	<p>{{description}}</p>
+  </div>
   {{/each}}
+  </div>
 </template>
